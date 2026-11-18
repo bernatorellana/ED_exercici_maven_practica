@@ -1,0 +1,18 @@
+<configuration>
+
+  <!-- Missatges a la consola -->
+  <appender name="CONSOLA" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%d{HH:mm:ss} %-5level %logger{20} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!-- Missatges a la capsa de text de la finestra (classe nostra) -->
+  <appender name="FINESTRA" class="edu.meteo.app.AppenderAreaText"/>
+
+  <root level="INFO">
+    <appender-ref ref="CONSOLA"/>
+    <appender-ref ref="FINESTRA"/>
+  </root>
+
+</configuration>
