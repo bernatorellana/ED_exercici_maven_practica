@@ -75,13 +75,13 @@ Llegiu el codi abans de començar. Fixeu-vos especialment en els `import` de cad
 
 | Funció | Llibreria | Quines classes la fan servir |
 |---|---|---|
-| Peticions HTTP | **OkHttp** 5.x | `ClientOpenMeteo` |
+| Peticions HTTP | **OkHttp** 5.x (okhttp-jvm)| `ClientOpenMeteo` |
 | JSON | **Jackson** 2.x (`jackson-databind`) | `ParserOpenMeteo` |
-| Dates de Java a Jackson | **Jackson** — mòdul `jsr310` | `ParserOpenMeteo` |
+| Dates de Java a Jackson | **Jackson** — mòdul `jsr310` 2.x | `ParserOpenMeteo` |
 | Estadística | **Apache Commons Math** 3.x | `AnalitzadorTemperatures` |
 | Gràfics | **JFreeChart** 1.5.x | `GraficTemperatures`, `FinestraMeteo` |
 | Log (API) | **SLF4J** 2.x (`slf4j-api`) | gairebé totes |
-| Log (implementació) | **Logback** (`logback-classic`) | `AppenderAreaText`, `logback.xml` |
+| Log (implementació) | **Logback** (`logback-classic`) 1.6.x | `AppenderAreaText`, `logback.xml` |
 | Tests | **JUnit** 5 | tots els tests |
 | Servidor HTTP fals per als tests | **MockWebServer** 5.x (`mockwebserver3`) | `ClientOpenMeteoTest` |
 
